@@ -22,6 +22,7 @@
                     #mc_embed_signup input.email {
                         border-color: #f7f7f7;
                         width: 100%;
+                        color:#e1ee8e;
                     }
                     #mc_embed_signup label {
                         padding-bottom: 0;
@@ -44,6 +45,21 @@
                     }
                     #mc_embed_signup .button:hover {
                         background: white;
+                    }
+
+                    @media screen and (min-width:992px) {
+                        #mc_embed_signup input.email {
+                            width: 75%;
+                        }
+                        #mc_embed_signup input.button {
+                            width:45%;
+                        }
+                    }
+                    @media screen and (min-width:1200px) {
+                        #mc_embed_signup_scroll label {
+                            width:60%;
+                            margin: auto;
+                        }
                     }
                     /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
                     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */

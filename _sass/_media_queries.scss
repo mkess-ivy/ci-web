@@ -1,7 +1,35 @@
-$on-palm                : 400px;
+$on-palm                : 500px;
+$on-tablet              : 767px;
+$on-laptop              : 992px;
+$on-desktop             : 1200px;
+$on-widescreen          : 1439px;
 
 @mixin palm {
-    @media screen and (min-width: #{$on-palm}) {
-      @content;
-    }
+  @media screen and (min-width: #{$on-palm}) {
+    @content;
   }
+}
+
+@mixin tablet {
+  @media screen and (min-width: #{$on-tablet}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (min-width: #{$on-laptop}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: #{$on-desktop}) {
+    @content;
+  }
+}
+
+@mixin widescreen {
+  @media screen and (min-width: #{$on-widescreen}) {
+    @content;
+  }
+}

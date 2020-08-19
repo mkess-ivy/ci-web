@@ -23,19 +23,49 @@ img { max-width: 100%; vertical-align: middle; }
 
 body { background-size: cover; background-repeat: no-repeat; background-position: center; font-family: "Akira", "Montserrat", sans-serif; margin: 0; }
 
+input { color: #e1ee8e; }
+
 .grid { padding: 25px; }
+
+@media screen and (min-width: 500px) { .grid { padding: 50px; } }
+
+@media screen and (min-width: 767px) { .grid { padding: 100px; max-width: 800px; margin: auto; } }
+
+@media screen and (min-width: 992px) { .grid { max-width: initial; padding: 50px 50px 35px; } }
+
+@media screen and (min-width: 767px) { .grid.header { padding: 15px 25px; } }
+
+@media screen and (min-width: 992px) { .grid.header { padding: 15px 50px 0; } }
 
 .logo { text-align: center; width: 275px; margin: 25px auto; }
 
-.hero-img { padding: 50px 0 75px; }
+@media screen and (min-width: 992px) { .logo { margin: 25px 0; } }
+
+.hero-img { padding: 50px 0 75px; margin: auto; }
+
+@media screen and (min-width: 992px) { .hero-img { width: 50%; padding: 0; margin: initial; } }
+
+@media screen and (min-width: 1439px) { .hero-img { width: 60%; } }
+
+@media screen and (min-width: 992px) { .hero-content { width: 40%; } }
+
+@media screen and (min-width: 1439px) { .hero-content { padding-right: 150px; } }
 
 .title { text-align: center; text-transform: uppercase; font-weight: bold; font-size: 16px; padding-bottom: 7px; border-bottom: 2px solid; margin: 0 auto 25px; width: fit-content; }
 
-@media screen and (min-width: 400px) { .title { font-size: 20px; } }
+@media screen and (min-width: 500px) { .title { font-size: 20px; } }
+
+@media screen and (min-width: 1200px) { .title { font-size: 28px; } }
 
 .desc { text-align: center; font-size: 18px; font-family: "Lora", serif; }
 
+@media screen and (min-width: 992px) { .desc { font-size: 22px; } }
+
 .subscribe { padding-top: 100px; }
+
+@media screen and (min-width: 1200px) { .subscribe { padding-top: 75px; } }
+
+@media screen and (min-width: 1439px) { .subscribe { padding-top: 50px; } }
 
 .line { width: 50px; border-bottom: 2px solid; height: 2px; }
 
@@ -45,15 +75,23 @@ body { background-size: cover; background-repeat: no-repeat; background-position
 
 .follow { text-align: center; font-size: 24px; text-transform: uppercase; font-weight: bold; line-height: 1; padding-bottom: 75px; }
 
+@media screen and (min-width: 1200px) { .follow { padding-bottom: 25px; width: 55%; margin: auto; } }
+
 .follow a { color: #e1ee8e; text-decoration: none; }
 
 .follow a:hover { color: #f7f7f7; }
 
 footer { text-transform: uppercase; font-weight: bold; text-align: center; padding: 20px; font-size: 11px; }
 
+@media screen and (min-width: 1439px) { footer { padding: 0 25px; text-align: initial; } }
+
 .copyright { width: 100%; }
 
+@media screen and (min-width: 992px) { .copyright { width: 25%; } }
+
 .footer-link { width: 100%; }
+
+@media screen and (min-width: 992px) { .footer-link { width: 25%; text-align: right; } }
 
 .footer-link a { color: #e1ee8e; text-decoration: none; }
 
