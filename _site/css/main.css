@@ -1,0 +1,62 @@
+*, *:before, *:after { box-sizing: border-box; }
+
+/** Reset some basic elements */
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
+
+/** Basic styling */
+body { font-family: 'Montserrat',sans-serif; font-size: 16px; line-height: 1.4; font-weight: 400; color: #f7f7f7; -webkit-text-size-adjust: 100%; }
+
+/** Set `margin-bottom` to maintain vertical rhythm */
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure { margin-bottom: 15px; }
+
+ul, li { list-style: none; }
+
+/** Images */
+img { max-width: 100%; vertical-align: middle; }
+
+/** Clearfix */
+.clear:before, .clear:after { content: " "; display: table; }
+
+.clear:after { clear: both; }
+
+@font-face { font-family: 'Akira'; src: url("/akira.otf") format("opentype"); }
+
+body { background-size: cover; background-repeat: no-repeat; background-position: center; font-family: "Akira", "Montserrat", sans-serif; margin: 0; }
+
+.grid { padding: 25px; }
+
+.logo { text-align: center; width: 275px; margin: 25px auto; }
+
+.hero-img { padding: 50px 0 75px; }
+
+.title { text-align: center; text-transform: uppercase; font-weight: bold; font-size: 16px; padding-bottom: 7px; border-bottom: 2px solid; margin: 0 auto 25px; width: fit-content; }
+
+@media screen and (min-width: 400px) { .title { font-size: 20px; } }
+
+.desc { text-align: center; font-size: 18px; font-family: "Lora", serif; }
+
+.subscribe { padding-top: 100px; }
+
+.line { width: 50px; border-bottom: 2px solid; height: 2px; }
+
+.line-text { text-transform: uppercase; font-size: 20px; font-weight: bold; }
+
+.more { padding: 50px 0; }
+
+.follow { text-align: center; font-size: 24px; text-transform: uppercase; font-weight: bold; line-height: 1; padding-bottom: 75px; }
+
+.follow a { color: #e1ee8e; text-decoration: none; }
+
+.follow a:hover { color: #f7f7f7; }
+
+footer { text-transform: uppercase; font-weight: bold; text-align: center; padding: 20px; font-size: 11px; }
+
+.copyright { width: 100%; }
+
+.footer-link { width: 100%; }
+
+.footer-link a { color: #e1ee8e; text-decoration: none; }
+
+.footer-link a:hover { color: #f7f7f7; }
+
+/*# sourceMappingURL=main.css.map */

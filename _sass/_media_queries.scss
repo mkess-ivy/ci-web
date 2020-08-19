@@ -1,0 +1,7 @@
+$on-palm                : 400px;
+
+@mixin palm {
+    @media screen and (min-width: #{$on-palm}) {
+      @content;
+    }
+  }
