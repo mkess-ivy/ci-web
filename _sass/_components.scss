@@ -1,7 +1,6 @@
 @font-face {
     font-family: 'Akira';
     src: url('/akira.otf')  format('opentype'), /* Safari, Android, iOS */
-         
   }
 
 body {
@@ -29,13 +28,17 @@ input {
         max-width: initial;
         padding: 50px 50px 35px;
     }
+    @include widescreen {
+        max-width:1640px;
+        margin:auto;
+    }
 
     &.header {
         @include tablet {
             padding:15px 25px;
         }
         @include laptop {
-            padding: 15px 50px 0;
+            padding: 0 50px 0;
         }
     }
 }
@@ -68,7 +71,7 @@ input {
     }
     @include widescreen {
         
-        padding-right:150px;
+        padding-right:50px;
     }
 }
 .title {
@@ -152,8 +155,10 @@ footer {
     font-size:11px;
 
     @include widescreen {
-        padding: 0 25px;
+        max-width:1640px;
+        margin:auto;
         text-align:initial;
+        padding: 20px 50px;
     }
 }
 .copyright {
