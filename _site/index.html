@@ -20,7 +20,7 @@
   <meta name="author" content="Montier Kess" />
   <meta name="description" content="" />
   <meta name="keywords" content="" />
-  <link rel="canonical" href="/" />
+  <link rel="canonical" href="http://localhost:4000/" />
 
   <!-- Meta OG Tags -->
   <meta name="og:title" content="Culture Intersects" />
@@ -32,7 +32,7 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="/css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
-  <link rel="alternate" type="application/rss+xml" title="Culture Intersects" href="/feed.xml" />
+  <link rel="alternate" type="application/rss+xml" title="Culture Intersects" href="http://localhost:4000/feed.xml" />
 
   <!-- Vendor Stylesheets -->
   <link rel="stylesheet" type="text/css" href="/css/vendor/frow.css" />
@@ -42,14 +42,18 @@
 <body style="background-image:url('/img/ci-bg.jpg');">
 <header>
     <div class="grid header">
-        <div class="logo"><img src="/img/ci-logo.png" /></div>
+        <a href="/"><div class="logo"><img src="/img/ci-logo.png" /></div></a>
     </div>
     
 </header>
 
-<div class="grid">
+<div class="grid grid-width">
     <div class="frow justify-between">
-        <div class="hero-img"><img src="/img/ci-hero.png" /></div>
+        <div class="hero-img">
+            <div class="frow centered">
+                <img src="/img/ci-hero.png" />
+            </div>
+        </div>
 
         <div class="hero-content">
             <div class="title">Culture Intersects</div>
@@ -67,7 +71,7 @@
                     }
                     #mc_embed_signup input.email {
                         border-color: #f7f7f7;
-                        width: 100%;
+                        width: 80%;
                         color:#e1ee8e;
                     }
                     #mc_embed_signup label {
@@ -103,8 +107,11 @@
                     }
                     @media screen and (min-width:1200px) {
                         #mc_embed_signup_scroll label {
-                            width:60%;
+                            width:70%;
                             margin: auto;
+                        }
+                        #mc_embed_signup input.email {
+                            width:50%;
                         }
                     }
                     /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.

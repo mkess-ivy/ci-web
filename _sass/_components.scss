@@ -27,6 +27,10 @@ input {
     @include laptop {
         max-width: initial;
         padding: 50px 50px 35px;
+        
+    }
+    @include desktop {
+        
     }
     @include widescreen {
         max-width:1640px;
@@ -40,6 +44,11 @@ input {
         @include laptop {
             padding: 0 50px 0;
         }
+    }
+}
+.grid-width {
+    @include laptop {
+        height:calc(100vh - 160px);
     }
 }
 .logo {
@@ -66,6 +75,10 @@ input {
     }
 }
 .hero-content {
+    @include tablet {
+        width:75%;
+        margin: auto;
+    }
     @include laptop {
         width: 40%;
     }
@@ -94,10 +107,10 @@ input {
 }
 .desc {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     font-family: $body-font;
 
-    @include laptop {
+    @include desktop {
         font-size:22px;
     }
 }
@@ -130,11 +143,11 @@ input {
     text-transform:uppercase;
     font-weight: bold;
     line-height: 1;
-    padding-bottom: 75px;
+    padding-bottom: 25px;
 
     @include desktop {
         padding-bottom:25px;
-        width:55%;
+        width:65%;
         margin:auto;
     }
 
@@ -165,7 +178,7 @@ footer {
     width:100%;
 
     @include laptop {
-        width: 25%;
+        width: 35%;
     }
 }
 .footer-link {
@@ -182,6 +195,46 @@ footer {
 
         &:hover {
             color: $white;
+        }
+    }
+}
+
+// Thank You Page
+.thankyou-wrapper {
+    height: calc(100vh - 270px);
+
+    @include palm {
+        height: calc(100vh - 370px);
+    }
+    @include tablet {
+        height: auto;
+    }
+}
+.thankyou-section {
+    font-size: 32px;
+    letter-spacing: 2.4px;
+    text-align: center;
+
+    span {
+        font-size: 14px;
+        display: block;
+        letter-spacing: 0.5px;
+    }
+}
+.primary-btn {
+    text-decoration: none;
+
+    div {
+        font-size: 11px;
+        margin: 25px;
+        color: white;
+        border: 2px solid;
+        width: auto;
+        display: inline-block;
+        padding: 5px 15px;
+
+        &:hover {
+            color: $blue;
         }
     }
 }
