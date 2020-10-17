@@ -25,7 +25,20 @@ body {
   font-weight: 400;
   color: $white;
   -webkit-text-size-adjust: 100%;
+
+  /** Page Load Transition */
+  animation: fadeInAnimation ease 3s; 
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
 }
+@keyframes fadeInAnimation { 
+  0% { 
+      opacity: 0; 
+  } 
+  100% { 
+      opacity: 1; 
+   } 
+} 
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
