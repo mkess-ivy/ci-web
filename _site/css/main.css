@@ -30,11 +30,11 @@ input { color: #e1ee8e; }
 
 .grid { padding: 25px; }
 
-@media screen and (min-width: 500px) { .grid { padding: 50px; } }
+@media screen and (min-width: 500px) { .grid { padding: 25px 50px; } }
 
-@media screen and (min-width: 767px) { .grid { padding: 100px; max-width: 800px; margin: auto; } }
+@media screen and (min-width: 767px) { .grid { padding: 25px 100px; max-width: 800px; margin: auto; } }
 
-@media screen and (min-width: 992px) { .grid { max-width: initial; padding: 50px 50px 35px; } }
+@media screen and (min-width: 992px) { .grid { max-width: initial; padding: 25px 50px 35px; } }
 
 @media screen and (min-width: 1439px) { .grid { max-width: 1640px; margin: auto; } }
 
@@ -48,7 +48,7 @@ input { color: #e1ee8e; }
 
 @media screen and (min-width: 992px) { .logo { margin: 25px 0; } }
 
-.hero-img { padding: 50px 0 75px; margin: auto; }
+.hero-img { padding: 0px 0 75px; margin: auto; }
 
 @media screen and (min-width: 992px) { .hero-img { width: 50%; padding: 0; margin: initial; } }
 
