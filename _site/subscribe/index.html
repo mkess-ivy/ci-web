@@ -1,5 +1,53 @@
-{% include head.html %}
-{% include header.html %}
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175824795-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-175824795-1');
+  </script>
+
+
+  <!-- SEO Information -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+
+  <title>Culture Intersects</title>
+  <meta name="author" content="Montier Kess" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <link rel="canonical" href="http://localhost:4000/subscribe/" />
+
+  <!-- Meta OG Tags -->
+  <meta name="og:title" content="Culture Intersects" />
+  <meta property="og:url" content="https://www.cultureintersects.com" />
+  <meta property="og:image" content="/og-img.png" />
+
+  <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+  <link rel="alternate" type="application/rss+xml" title="Culture Intersects" href="http://localhost:4000/feed.xml" />
+
+  <!-- Vendor Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="/css/vendor/frow.css" />
+
+ 
+
+</head>
+
+<body style="background-image:url('/img/ci-bg.jpg');">
+<header>
+    <div class="grid header">
+        <a href="/"><div class="logo"><img src="/img/ci-logo.png" /></div></a>
+    </div>
+    
+</header>
 
 
 
@@ -99,4 +147,12 @@
         </div>
     </div>
 </div>
-{% include footer.html %}
+<footer>
+    <div class="frow justify-between">
+        <div class="copyright">a svncrwns platform. © 2020.</div>
+        <div class="footer-link"><a href="mailto:studio@svncrwns.com">contact</a></div>
+    </div>
+</footer>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="/javascript/main.js"></script>
+</body>

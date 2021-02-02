@@ -130,4 +130,8 @@ footer { text-transform: uppercase; font-weight: bold; text-align: center; paddi
 
 .se-pre-con { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 9999; background: url(/img/ci-preloader.gif) center no-repeat #fff; }
 
+.component, .sibling_component { font: 300; font-weight: bold; background-color: red; }
+
+.sibling_component { font-size: 20px; }
+
 /*# sourceMappingURL=main.css.map */

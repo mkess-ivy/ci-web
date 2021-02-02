@@ -1,7 +1,11 @@
 {% include head.html %}
 {% include header.html %}
 
-
+{% comment %}
+{% for item in site.data.example %}
+<li>{{ item.name }}</li>
+{% endfor %}
+{% endcomment %}
 
 <div class="grid grid-width">
     <div class="frow justify-between">

@@ -9,6 +9,7 @@ body {
     background-position: center;
     font-family: $primary-font;
     margin: 0;
+    
 }
 input {
     color:$yellow;
@@ -30,7 +31,6 @@ input {
         
     }
     @include desktop {
-        
     }
     @include widescreen {
         max-width:1640px;
@@ -271,4 +271,15 @@ footer {
     height: 100%;
     z-index: 9999;
     background: url(/img/ci-preloader.gif) center no-repeat #fff;
+  }
+
+  .component {
+
+      font: 300;
+      font-weight: bold;
+      background-color: red;
+  }
+  .sibling_component {
+      @extend .component;
+      font-size: 20px;
   }
