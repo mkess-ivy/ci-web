@@ -48,9 +48,11 @@ input { color: #e1ee8e; }
 
 @media screen and (min-width: 992px) { .logo { margin: 25px 0; } }
 
-.hero-img { padding: 0px 0 75px; margin: auto; }
+.hero-img { height: 50vh; padding: 0px 0 75px; margin: auto; color: blue; max-width: 425px !important; }
 
-@media screen and (min-width: 992px) { .hero-img { width: 50%; padding: 0; margin: initial; } }
+@media screen and (min-width: 767px) { .hero-img { height: 60vh; } }
+
+@media screen and (min-width: 992px) { .hero-img { width: 50%; padding: 0; margin: initial; height: 100%; max-width: none !important; } }
 
 @media screen and (min-width: 1439px) { .hero-img { width: 60%; } }
 
