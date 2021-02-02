@@ -1,6 +1,10 @@
 {% include head.html %}
 {% include header.html %}
 
+{% for item in site.data.example %}
+<li>{{ item.name }}</li>
+{% endfor %}
+
 <div class="grid grid-width">
     <div class="frow justify-between">
         <div class="hero-img">
