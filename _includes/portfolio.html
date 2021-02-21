@@ -1,0 +1,22 @@
+<section class="portfolio">
+    
+    {% for item in site.portfolio %}
+    <div class="portfolio_item">
+        <div class="frow justify-between">
+            <div class="portfolio_meta">
+                <div class="portfolio_subtitle">{{ item.subtitle }}</div>
+                <div class="portfolio_title">{{ item.title }}</div>
+                <div class="portfolio_desc">{{ item.desc }}</div>
+                <div class="portfolio_release">{{ item.release }}</div>
+                <a href="{{ item.cta_url }}">
+                    <div class="portfolio_cta">
+                        {{ item.cta }}
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio_img" style="background-image:url('{{item.cover}}');"></div>
+        </div>
+    </div>
+    {% endfor %}
+
+</section>

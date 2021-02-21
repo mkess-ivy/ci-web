@@ -1,0 +1,56 @@
+I"<div class="grid grid-width">
+    <section class="ci_section_header">
+    <div class="ci_section_title">Culture Intersects</div>
+    <p class="ci_section_desc">Culture Intersects is a digital platform that highlights the intersections of black culture and commerce.  It’s an archive of our stories sharing the culture and commerce blueprint in America and across the diaspora.</p>
+</section>
+
+    <section class="banner">
+    
+    <div class="frow justify-between">
+        
+        
+        <div class="banner_item">
+            <div class="banner_img">
+                <img src="/img/ci-subscribe.jpg" />
+                <div class="content_title"><a href="/subscribe/">Subscribe to our list</a></div>
+            </div>
+        </div>
+        
+        <div class="banner_item">
+            <div class="banner_img">
+                <img src="/img/ci-c001-cover.jpg" />
+                <div class="content_title"><a href="">Browse Collection 001</a></div>
+            </div>
+        </div>
+        
+
+    </div>
+
+</section>
+</div>
+
+<section class="portfolio">
+    
+    
+    <div class="portfolio_item">
+        <div class="frow justify-between">
+            <div class="portfolio_meta">
+                <div class="portfolio_subtitle">Collection 002</div>
+                <div class="portfolio_title">From Nothing to Something</div>
+                <div class="portfolio_desc">POSTMAGA is an archive capsule that stamps a very defining year of America in 2020.  This collection has been created with the goal of encouraging healthy discourse around our truths, and how we can move forward, better together.</div>
+                <div class="portfolio_release">Releasing February 2021</div>
+                <a href="#">
+                    <div class="portfolio_cta">
+                        Get Notified
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio_img" style="background-image:url('/img/ci-c002-cover.jpg');"></div>
+        </div>
+    </div>
+    
+
+</section>
+
+<p>From Nothing to Something</p>
+:ET

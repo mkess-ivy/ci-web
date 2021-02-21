@@ -1,0 +1,16 @@
+<section class="banner">
+    
+    <div  class="frow justify-between">
+        
+        {% for item in site.data.banner %}
+        <div class="banner_item">
+            <div class="banner_img">
+                <img src="{{ item.image }}" />
+                <div class="content_title"><a href="{{ item.url }}">{{ item.title }}</a></div>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+
+</section>
