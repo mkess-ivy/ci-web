@@ -9,5 +9,5 @@ bg-img: /img/ci-bg.jpg
 
 {% for item in site.portfolio %}
 {{ item.header }}
-{{ item.title }}
+{{ item.title }} 
 {% endfor %}
