@@ -43,8 +43,10 @@
 
 </head>
 
-<body style="background-image:url('/img/ci-bg.jpg');">
-<header>
+<body>
+
+<div class="bg_img" style="background-image:url('/img/ci-bg.jpg');">
+    <header>
     <div class="grid header">
         <div class="frow justify-between">
             
@@ -95,17 +97,15 @@
         </div>
     </div>
 </header>
-
-
-    <div class="grid grid-width">
-    <section class="ci_section_header">
+    <div class="grid">
+        <section class="ci_section_header">
     <div class="ci_section_title">Culture Intersects</div>
     <p class="ci_section_desc">Culture Intersects is a digital platform that highlights the intersections of black culture and commerce.  It’s an archive of our stories sharing the culture and commerce blueprint in America and across the diaspora.</p>
 </section>
-
-    <section class="banner">
     
-    <div class="frow justify-between">
+        <section class="banner">
+    
+    <div  class="frow justify-between">
         
         
         <div class="banner_item">
@@ -126,27 +126,13 @@
     </div>
 
 </section>
+    </div>
 </div>
 
-<section class="portfolio">
+
+
+    <section class="portfolio">
     
-    
-    <div class="portfolio_item">
-        <div class="frow justify-between">
-            <div class="portfolio_meta">
-                <div class="portfolio_subtitle">Capsule 001</div>
-                <div class="portfolio_title">POSTMAGA</div>
-                <div class="portfolio_desc">POSTMAGA is an archive capsule that stamps a very defining year of America in 2020.  This collection has been created with the goal of encouraging healthy discourse around our truths, and how we can move forward, better together.</div>
-                <div class="portfolio_release">Now Available</div>
-                <a href="#">
-                    <div class="portfolio_cta">
-                        Explore PostMaga
-                    </div>
-                </a>
-            </div>
-            <div class="portfolio_img" style="background-image:url('/img/ci-postmaga-cover.jpg');"></div>
-        </div>
-    </div>
     
     <div class="portfolio_item">
         <div class="frow justify-between">
@@ -154,14 +140,37 @@
                 <div class="portfolio_subtitle">Collection 002</div>
                 <div class="portfolio_title">From Nothing to Something</div>
                 <div class="portfolio_desc">POSTMAGA is an archive capsule that stamps a very defining year of America in 2020.  This collection has been created with the goal of encouraging healthy discourse around our truths, and how we can move forward, better together.</div>
-                <div class="portfolio_release">Releasing February 2021</div>
-                <a href="#">
-                    <div class="portfolio_cta">
-                        Get Notified
-                    </div>
-                </a>
+                <div class="portfolio_bottom">
+                    <div class="portfolio_title">Releasing February 2021</div>
+                    <a href="#">
+                        <div class="portfolio_cta">
+                            Get Notified
+                        </div>
+                    </a>
+                </div>
+                
             </div>
             <div class="portfolio_img" style="background-image:url('/img/ci-c002-cover.jpg');"></div>
+        </div>
+    </div>
+    
+    <div class="portfolio_item">
+        <div class="frow justify-between">
+            <div class="portfolio_meta">
+                <div class="portfolio_subtitle">Capsule 001</div>
+                <div class="portfolio_title">POSTMAGA</div>
+                <div class="portfolio_desc">POSTMAGA is an archive capsule that stamps a very defining year of America in 2020.  This collection has been created with the goal of encouraging healthy discourse around our truths, and how we can move forward, better together.</div>
+                <div class="portfolio_bottom">
+                    <div class="portfolio_title">Now <br />Available</div>
+                    <a href="#">
+                        <div class="portfolio_cta">
+                            Explore PostMaga
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+            <div class="portfolio_img" style="background-image:url('/img/ci-postmaga-cover.jpg');"></div>
         </div>
     </div>
     
@@ -179,9 +188,12 @@
             <div class="standout_img">
                 <img src="/img/postmaga-collection.png" />
             </div>
-            <a href="" class="standout_cta ">
-                <div>Shop Capsule</div>
-            </a>
+            <div class="standout_cta_wrapper">
+                <a href="">
+                    <div class="standout_cta ">Shop Capsule</div>
+                </a>
+            </div>
+            
         </div>
         
         <div class="standout_item">
@@ -191,9 +203,12 @@
             <div class="standout_img">
                 <img src="/img/ci-stream.png" />
             </div>
-            <a href="" class="standout_cta two">
-                <div>Available on Tidal</div>
-            </a>
+            <div class="standout_cta_wrapper">
+                <a href="">
+                    <div class="standout_cta two">Available on Tidal</div>
+                </a>
+            </div>
+            
         </div>
         
 
@@ -205,25 +220,27 @@
     <div class="frow justify-between">
         <div class="footer_logo"><img src="/img/ci-logo-v2.png" /></div>
         <div class="footer_menu">
-            <ul class="footer_menu_list">
-                
-                <li><a  href="/news/">news</a></li>
-                
-                <li><a  href="www.postmaga.store">postmaga</a></li>
-                
-                <li><a  href="www.svncrwns.com">svncrwns</a></li>
-                
-            </ul>
-
-            <ul class="footer_menu_list">
-                
-                <li><a  href="/subscribe/">subscribe</a></li>
-                
-                <li><a  href="/work-with-us/">work with us</a></li>
-                
-                <li><a  href="/contact/">contact</a></li>
-                
-            </ul>
+            <div class="frow justify-between">
+                <ul class="footer_menu_list">
+                    
+                    <li><a  href="/news/">news</a></li>
+                    
+                    <li><a  href="www.postmaga.store">postmaga</a></li>
+                    
+                    <li><a  href="www.svncrwns.com">svncrwns</a></li>
+                    
+                </ul>
+    
+                <ul class="footer_menu_list">
+                    
+                    <li><a  href="/subscribe/">subscribe</a></li>
+                    
+                    <li><a  href="/work-with-us/">work with us</a></li>
+                    
+                    <li><a  href="/contact/">contact</a></li>
+                    
+                </ul>
+            </div>
         </div>
     </div>
     <div class="copyright">© 2021.</div>

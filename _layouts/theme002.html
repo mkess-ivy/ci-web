@@ -1,5 +1,14 @@
 {% include head.html %}
-{% include header.html %}
+
+<div class="bg_img" style="background-image:url('{{ page.bg-img }}');">
+    {% include header.html %}
+    <div class="grid">
+        {% include page_title.html name="Culture Intersects" desc="Culture Intersects is a digital platform that highlights the intersections of black culture and commerce.  It’s an archive of our stories sharing the culture and commerce blueprint in America and across the diaspora." %}
+    
+        {% include banner.html %}
+    </div>
+</div>
+
 
 
     {{ content }}

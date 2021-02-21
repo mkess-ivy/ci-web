@@ -9,9 +9,12 @@
             <div class="standout_img">
                 <img src="{{ item.image }}" />
             </div>
-            <a href="{{ item.cta_url }}" class="standout_cta {% if item.cta-class %}{{ item.cta-class }}{% endif %}">
-                <div>{{ item.cta }}</div>
-            </a>
+            <div  class="standout_cta_wrapper">
+                <a href="{{ item.cta_url }}">
+                    <div class="standout_cta {% if item.cta-class %}{{ item.cta-class }}{% endif %}">{{ item.cta }}</div>
+                </a>
+            </div>
+            
         </div>
         {% endfor %}
 

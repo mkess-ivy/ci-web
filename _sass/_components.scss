@@ -4,21 +4,24 @@
   }
 
 body {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    
     font-family: $primary-font;
     margin: 0;
+    background-color: $blue;
     
 }
 input {
     color:$yellow;
 }
+.bg_img {
+    background-size: 100%;
+    background-position: top center;
+}
 .grid {
     padding: 25px;
     position: relative;
     // z-index: 3;
-    background: $blue;
+    // background: $blue;
 
     &.ci_overlay_grid {
         background: transparent;
@@ -28,7 +31,7 @@ input {
         padding:25px 50px;
     }
     @include tablet {
-        padding: 25px 100px;
+        padding: 25px 50px;
         max-width:800px;
         margin:auto;
     }
@@ -40,7 +43,7 @@ input {
     @include desktop {
     }
     @include widescreen {
-        max-width:1640px;
+        max-width:1420px;
         margin:auto;
     }
 
@@ -180,20 +183,7 @@ input {
         }
     }
 }
-footer {
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align:center;
-    padding:20px;
-    font-size:11px;
 
-    @include widescreen {
-        max-width:1640px;
-        margin:auto;
-        text-align:initial;
-        padding: 20px 50px;
-    }
-}
 .copyright {
     width:100%;
 
@@ -260,17 +250,37 @@ footer {
 }
 
 // Home
+.ci_section_header {
+    @include desktop {
+        width: 65%;
+    }
+}
 .ci_section_title {
     color: $liteblue;
     font-size: 32px;
     line-height: 1;
     letter-spacing: 0.78;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
+
+    @include  tablet {
+        width: 65%;
+    }
+    @include desktop {
+        font-size: 54px;
+    }
+    @include widescreen {
+        font-size: 60px;
+    }
+    
 }
 .ci_section_desc {
     font-family: $alt-font;
     color: $liteblue;
     font-size: 20px;
+
+    @include widescreen {
+        font-size: 26px;
+    }
 }
 
 .banner {
@@ -278,6 +288,10 @@ footer {
 }
 .banner_item {
     padding-bottom: 75px;
+
+    @include tablet {
+        width: 48%;
+    }
 }
 .content_title {
     
@@ -289,6 +303,17 @@ footer {
         margin-top: -33px;
         display: block;
         margin-left: 16px;
+
+        @include tablet {
+            font-size: 26px;
+            margin-top: -20px;
+        }
+
+        @include desktop {
+            font-size: 36px;
+            margin-left: 55px;
+            width: 80%;
+        }
     }
 }
 
@@ -302,33 +327,63 @@ footer {
         border-bottom: 30px solid #E0E0E0;
         margin-top: 75px;
         padding-bottom: 75px;
+        position: relative;
 
         &:last-child {
             border-bottom: 0;
-            padding-bottom: 0;
+            // padding-bottom: 0;
         }
+
+        
     }
     .portfolio_meta {
         padding: 0 35px 75px;
+
+        @include tablet {
+            width:65%;
+        }
+
+        @include desktop {
+            width: 50%;
+        }
+        @include widescreen {
+            padding-left: 100px;
+            width: 40%;
+        }
     }
     .portfolio_subtitle {
-        padding-bottom: 25px;
+        padding-bottom: 15px;
     }
     .portfolio_title {
         font-size: 32px;
         line-height: 1;
         padding-bottom: 30px;
+
+        @include tablet {
+            font-size: 36px;
+        }
+        @include widescreen {
+            width: 75%;
+        }
     }
     .portfolio_desc {
         font-family: $alt-font;
         font-size: 18px;
         padding-bottom:75px;
+
+        @include desktop {
+            padding-bottom: 275px;
+        }
+        @include widescreen {
+            font-size: 22px;
+        }
     }
-    .portfolio_release {
-        font-size: 32px;
-        line-height: 1;
-        padding-bottom: 25px;
+    .portfolio_bottom {
+        position: absolute;
+        bottom:75px;
+        width:35%;
     }
+    
     .portfolio_cta {
         @include cta($blue, $liteblue)
     }
@@ -340,6 +395,18 @@ footer {
         height: 50vh;
         background-color: $blue;
         padding: 15px 0 15px 15px;
+
+        @include tablet {
+            border: 25px solid;
+            height: 75vh;
+        }
+
+        @include desktop {
+            width: 50%;
+        }
+        @include widescreen {
+            width: 45%;
+        }
         
     }
 }
@@ -347,6 +414,10 @@ footer {
 // Home - Standout Section
 .standout {
     margin-bottom: 65vh;
+
+    @include tablet {
+        margin-bottom: 30vh;
+    }
     .standout_item {
         padding: 45px;
 
@@ -357,8 +428,20 @@ footer {
             background-color: $darkgray;
         }
 
+        @include tablet {
+            padding:75px;
+        }
+
+        @include desktop {
+            width:50%;
+            padding: 50px;
+        }
+        @include widescreen {
+            padding: 50px 75px 50px;
+        }
+
         .standout_title {
-            width: 65%;
+            width: 200px;
             line-height: 1;
             padding-bottom: 40px;
             color: $yellow;
@@ -366,9 +449,23 @@ footer {
             &.two {
                 color: $liteblue;
             }
+
+            @include tablet {
+                font-size: 24px;
+                width: 250px;
+            }
         }
         .standout_img {
             padding-bottom: 40px;
+
+            @include tablet {
+                width: 85%;
+                margin: auto;
+            }
+            
+            @include widescreen {
+                width: 70%;
+            }
         }
         .standout_cta {
             @include cta($yellow, $black);
@@ -377,6 +474,9 @@ footer {
             &.two {
                 @include cta($liteblue, $black); 
             }
+        }
+        .standout_cta_wrapper {
+            text-align: center;
         }
     }
 }
