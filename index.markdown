@@ -13,7 +13,4 @@ bg-img: /img/ci-bg.jpg
 
 {% include portfolio.html %}
 
-{% for item in site.portfolio %}
-{{ item.header }}
-{{ item.title }} 
-{% endfor %}
+{% include standout.html %}

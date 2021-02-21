@@ -3,9 +3,27 @@ $blue: #0040AF;
 $yellow: #e1ee8e;
 $liteblue: #BDFDE5;
 $gray: #EDEEFF;
+$green: #005A2F;
+$darkgray: #242526;
+$black: #0A0908;
 
 $spacing-unit: 30px;
 
 $primary-font: 'Akira','Montserrat',sans-serif;
 $body-font: 'Montserrat',sans-serif;
 $alt-font: 'Lora', serif;
+
+@mixin cta ($color, $linkcolor) {
+    display: inline-block;
+    padding: 7px 25px;
+    color: $color;
+    border: 3px solid;
+    text-decoration: none;
+
+    &:hover {
+        transition: .5s;
+        background-color: $color;
+        color: $linkcolor;
+        border-color: $color;
+    }
+}

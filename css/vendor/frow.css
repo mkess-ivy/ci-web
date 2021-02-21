@@ -288,7 +288,7 @@ button:hover, button:focus, button:active,
 [type=submit]:hover,
 [type=submit]:focus,
 [type=submit]:active {
-  background-color: #29292a;
+  background-color: transparent;
   border-color: #29292a;
   outline: none;
   color: #FFF;

@@ -31,6 +31,8 @@ plugins:
   - jekyll-feed
 
 bg-img: /img/ci-bg.jpg
+header-logo: /img/ci-logo-v2.gif
+logo: /img/ci-logo-v2.png
 
 collections:
   portfolio:

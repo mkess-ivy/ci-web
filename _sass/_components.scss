@@ -16,6 +16,13 @@ input {
 }
 .grid {
     padding: 25px;
+    position: relative;
+    // z-index: 3;
+    background: $blue;
+
+    &.ci_overlay_grid {
+        background: transparent;
+    }
 
     @include palm {
         padding:25px 50px;
@@ -60,6 +67,7 @@ input {
         margin:25px 0;
     }
 }
+
 .hero-img {
     height: 50vh;
     padding:  0px 0 75px;
@@ -254,8 +262,8 @@ footer {
 // Home
 .ci_section_title {
     color: $liteblue;
-    font-size: 28px;
-    line-height: 1.2;
+    font-size: 32px;
+    line-height: 1;
     letter-spacing: 0.78;
     padding-bottom: 30px;
 }
@@ -284,18 +292,20 @@ footer {
     }
 }
 
-// Portfolio
+// Home - Portfolio Section
 .portfolio {
     background: $gray;
     color: $blue;
-    padding:75px 0;
+    padding:1px 0 0;
 
     .portfolio_item {
         border-bottom: 30px solid #E0E0E0;
         margin-top: 75px;
+        padding-bottom: 75px;
 
         &:last-child {
             border-bottom: 0;
+            padding-bottom: 0;
         }
     }
     .portfolio_meta {
@@ -310,7 +320,7 @@ footer {
         padding-bottom: 30px;
     }
     .portfolio_desc {
-        font-family: $body-font;
+        font-family: $alt-font;
         font-size: 18px;
         padding-bottom:75px;
     }
@@ -320,15 +330,7 @@ footer {
         padding-bottom: 25px;
     }
     .portfolio_cta {
-        display: inline-block;
-        padding: 7px 25px;
-        color: $blue;
-        border: 3px solid;
-
-        &:hover {
-            transition: .5s;
-            background-color: $liteblue;
-        }
+        @include cta($blue, $liteblue)
     }
     .portfolio_img {
         background-position: center;
@@ -338,9 +340,47 @@ footer {
         height: 50vh;
         background-color: $blue;
         padding: 15px 0 15px 15px;
-        margin-bottom: 75px;
+        
     }
 }
+
+// Home - Standout Section
+.standout {
+    margin-bottom: 65vh;
+    .standout_item {
+        padding: 45px;
+
+        &:first-child {
+            background-color: $green;
+        }
+        &:last-child {
+            background-color: $darkgray;
+        }
+
+        .standout_title {
+            width: 65%;
+            line-height: 1;
+            padding-bottom: 40px;
+            color: $yellow;
+        
+            &.two {
+                color: $liteblue;
+            }
+        }
+        .standout_img {
+            padding-bottom: 40px;
+        }
+        .standout_cta {
+            @include cta($yellow, $black);
+            font-size: 14px;
+
+            &.two {
+                @include cta($liteblue, $black); 
+            }
+        }
+    }
+}
+
 
 // PreLoader
 // PreLoader

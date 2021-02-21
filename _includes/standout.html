@@ -1,0 +1,19 @@
+<section class="standout">
+    <div class="frow justify-between">
+        
+        {% for item in site.data.standout %}
+        <div class="standout_item">
+            <div class="standout_title {% if item.class %}{{ item.class }}{% endif %}">
+                {{ item.subtitle }}
+            </div>
+            <div class="standout_img">
+                <img src="{{ item.image }}" />
+            </div>
+            <a href="{{ item.cta_url }}" class="standout_cta {% if item.cta-class %}{{ item.cta-class }}{% endif %}">
+                <div>{{ item.cta }}</div>
+            </a>
+        </div>
+        {% endfor %}
+
+    </div>
+</section>

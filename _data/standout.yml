@@ -1,0 +1,10 @@
+- subtitle: Shop our collection
+  image: /img/postmaga-collection.png
+  cta_url: #
+  cta: Shop Capsule
+- subtitle: Stream our sounds
+  image: /img/ci-stream.png
+  cta_url: #
+  cta: Available on Tidal
+  cta-class: two
+  class: two

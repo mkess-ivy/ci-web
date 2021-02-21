@@ -1,0 +1,15 @@
+menu1:
+- name: news
+  url: /news/
+- name:  postmaga
+  url: www.postmaga.store
+- name: svncrwns
+  url: www.svncrwns.com
+
+menu2:
+- name: subscribe
+  url: /subscribe/
+- name:  work with us
+  url: /work-with-us/
+- name: contact
+  url: /contact/

@@ -7,18 +7,24 @@
 <div class="overlay overlay-data">
     <div class="overlay_container clear">
         <nav>
-            <div class="grid">
-                    
-                <ul>
-                    <div class="frow justify-start">
-                    
-                        <li>social</li>
-                        <li>news</li>
-                        <li>subscribe</li>
-                    
+            <div class="grid ci_overlay_grid">
+                <div class="ci_overlay">
+                    <div class="ci_overlay_logo">
+                        <img src=" {{ site.logo }}"/>
                     </div>
-                </ul>
-                    
+                    <div class="ci_overlay_title">Culture Intersects</div>
+                    <ul class="ci_overlay_menu">
+                        {% for item in site.data.footer-menu.menu1 %}
+                        <li><a  href="{{ item.url }}">{{ item.name }}</a></li>
+                        {% endfor %}
+                    </ul>
+        
+                    <ul class="ci_overlay_menu">
+                        {% for item in site.data.footer-menu.menu2 %}
+                        <li><a  href="{{ item.url }}">{{ item.name }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>    
             </div>
         </nav>
     </div>

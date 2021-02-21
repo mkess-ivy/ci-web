@@ -1,9 +1,30 @@
 <footer>
     <div class="frow justify-between">
+        <div class="footer_logo"><img src="{{ site.logo }}" /></div>
+        <div class="footer_menu">
+            <ul class="footer_menu_list">
+                {% for item in site.data.footer-menu.menu1 %}
+                <li><a  href="{{ item.url }}">{{ item.name }}</a></li>
+                {% endfor %}
+            </ul>
+
+            <ul class="footer_menu_list">
+                {% for item in site.data.footer-menu.menu2 %}
+                <li><a  href="{{ item.url }}">{{ item.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="copyright">© 2021.</div>
+</footer>
+<!-- 
+<footer>
+    <div class="frow justify-between">
         <div class="copyright">a svncrwns platform. © 2020.</div>
         <div class="footer-link"><a href="mailto:studio@svncrwns.com">contact</a></div>
     </div>
 </footer>
+-->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script type="text/javascript" src="/javascript/main.js"></script>
 </body>
