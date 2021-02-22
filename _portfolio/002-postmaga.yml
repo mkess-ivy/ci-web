@@ -5,6 +5,8 @@ desc: "POSTMAGA is an archive capsule that stamps a very defining year of Americ
 release: "Now <br/>Available"
 cta_url: "#"
 cta: "Explore PostMaga"
-cover: "/img/ci-postmaga-cover.jpg"
+cover: "/img/ci-img-inner-004.jpg"
+cover-img: "/img/postmaga-logo.png"
+width: 45%;
 order: 2
 ---

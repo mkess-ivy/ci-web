@@ -5,5 +5,7 @@ desc: "POSTMAGA is an archive capsule that stamps a very defining year of Americ
 release: "Releasing February 2021"
 cta_url: "#"
 cta: "Get Notified"
-cover: "/img/ci-c002-cover.jpg"
+cover: "/img/ci-cover-bw-plant.jpg"
+cover-img: "/img/ci-img-inner-001.gif"
+width: 75%;
 ---

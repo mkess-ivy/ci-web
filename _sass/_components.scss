@@ -190,6 +190,11 @@ input {
     @include laptop {
         width: 35%;
     }
+    @include desktop {
+        width: 35%;
+        font-family: $body-font;
+        font-size: 12px;
+    }
 }
 .footer-link {
     width: 100%;
@@ -254,6 +259,9 @@ input {
     @include desktop {
         width: 65%;
     }
+    @include widescreen {
+        width: 55%;
+    }
 }
 .ci_section_title {
     color: $liteblue;
@@ -285,6 +293,10 @@ input {
 
 .banner {
     margin-top:75px;
+
+    @include widescreen {
+        margin-top: 125px;
+    }
 }
 .banner_item {
     padding-bottom: 75px;
@@ -321,7 +333,7 @@ input {
 .portfolio {
     background: $gray;
     color: $blue;
-    padding:1px 0 0;
+    padding:0px 0 0;
 
     .portfolio_item {
         border-bottom: 30px solid #E0E0E0;
@@ -331,7 +343,11 @@ input {
 
         &:last-child {
             border-bottom: 0;
-            // padding-bottom: 0;
+        }
+
+        @include desktop {
+            padding-bottom: 0;
+            margin-top: 0;
         }
 
         
@@ -345,6 +361,8 @@ input {
 
         @include desktop {
             width: 50%;
+            padding-bottom: 0;
+            padding-top: 60px; 
         }
         @include widescreen {
             padding-left: 100px;
@@ -372,15 +390,15 @@ input {
         padding-bottom:75px;
 
         @include desktop {
-            padding-bottom: 275px;
+            // padding-bottom: 275px;
         }
         @include widescreen {
-            font-size: 22px;
+            // font-size: 20px;
         }
     }
     .portfolio_bottom {
         position: absolute;
-        bottom:75px;
+        bottom:50px;
         width:35%;
     }
     
@@ -397,17 +415,23 @@ input {
         padding: 15px 0 15px 15px;
 
         @include tablet {
-            border: 25px solid;
-            height: 75vh;
+            // border: 25px solid;
+            height: 76vh;
         }
 
         @include desktop {
             width: 50%;
+            padding:0;
+            background-color: $blue;
         }
         @include widescreen {
             width: 45%;
         }
         
+    }
+    .portfolio_img_inner {
+        // width: 75%;
+        text-align:center;
     }
 }
 

@@ -17,7 +17,11 @@
                 </div>
                 
             </div>
-            <div class="portfolio_img" style="background-image:url('{{item.cover}}');"></div>
+            <div class="portfolio_img" style="background-image:url('{{item.cover}}');">
+                <div class="frow centered">
+                    <div class="portfolio_img_inner"><img src="{{ item.cover-img }}" style="width: {{ item.width }}" /></div>
+                </div>
+            </div>
         </div>
     </div>
     {% endfor %}
