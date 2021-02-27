@@ -9,4 +9,8 @@ bg-img: /img/ci-bg.jpg
 
 {% include portfolio.html %}
 
+{% include mission.html %}
+
+{% comment %}
 {% include standout.html %}
+{% endcomment %}

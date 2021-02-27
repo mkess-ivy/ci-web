@@ -336,7 +336,7 @@ input {
     padding:0px 0 0;
 
     .portfolio_item {
-        border-bottom: 30px solid #E0E0E0;
+        border-bottom: 30px solid $darkgray;
         margin-top: 75px;
         padding-bottom: 75px;
         position: relative;
@@ -380,8 +380,11 @@ input {
         @include tablet {
             font-size: 36px;
         }
+        @include desktop {
+            width: 90%;
+        }
         @include widescreen {
-            width: 75%;
+            width: 90%;
         }
     }
     .portfolio_desc {
@@ -424,9 +427,9 @@ input {
             padding:0;
             background-color: $blue;
         }
-        @include widescreen {
-            width: 45%;
-        }
+        // @include widescreen {
+        //     width: 45%;
+        // }
         
     }
     .portfolio_img_inner {
@@ -504,6 +507,28 @@ input {
         }
     }
 }
+
+// Mission
+.mission {
+    @include bg;
+    text-align: center;
+    color: $liteblue;
+    text-align: center;
+    padding:100px;
+
+    .mission_subtitle {
+        padding-bottom: 45px;
+    }
+    .mission_statement {
+        font-size:40px;
+        line-height: 42px;
+        padding-bottom: 45px;
+    }
+}
+.mission_cta {
+    @include cta($liteblue, $black);
+}
+
 
 
 // PreLoader

@@ -1,4 +1,4 @@
-I"<section class="portfolio">
+I"×	<section class="portfolio">
     
     
     <div class="portfolio_item">
@@ -17,8 +17,10 @@
                 </div>
                 
             </div>
-            <div class="portfolio_img" style="background-image:url('/img/ci-c002-cover.jpg');">
-                <div class="portfolio_img_inner"><img src="" /></div>
+            <div class="portfolio_img" style="background-image:url('/img/ci-cover-bw-plant.jpg');">
+                <div class="frow centered">
+                    <div class="portfolio_img_inner"><img src="/img/ci-img-inner-001.gif" style="width: 75%;" /></div>
+                </div>
             </div>
         </div>
     </div>
@@ -39,8 +41,10 @@
                 </div>
                 
             </div>
-            <div class="portfolio_img" style="background-image:url('/img/ci-postmaga-cover.jpg');">
-                <div class="portfolio_img_inner"><img src="" /></div>
+            <div class="portfolio_img" style="background-image:url('/img/ci-img-inner-004.jpg');">
+                <div class="frow centered">
+                    <div class="portfolio_img_inner"><img src="/img/postmaga-logo.png" style="width: 45%;" /></div>
+                </div>
             </div>
         </div>
     </div>
@@ -48,41 +52,4 @@
 
 </section>
 
-<section class="standout">
-    <div class="frow justify-between">
-        
-        
-        <div class="standout_item">
-            <div class="standout_title ">
-                Shop our collection
-            </div>
-            <div class="standout_img">
-                <img src="/img/postmaga-collection.png" />
-            </div>
-            <div class="standout_cta_wrapper">
-                <a href="">
-                    <div class="standout_cta ">Shop Capsule</div>
-                </a>
-            </div>
-            
-        </div>
-        
-        <div class="standout_item">
-            <div class="standout_title two">
-                Stream our sounds
-            </div>
-            <div class="standout_img">
-                <img src="/img/ci-stream.png" />
-            </div>
-            <div class="standout_cta_wrapper">
-                <a href="">
-                    <div class="standout_cta two">Available on Tidal</div>
-                </a>
-            </div>
-            
-        </div>
-        
-
-    </div>
-</section>
 :ET
