@@ -6,7 +6,7 @@ release: "Now <br/>Available"
 cta_url: "#"
 cta: "Explore PostMaga"
 cover: "/img/ci-img-inner-004.jpg"
-cover-img: "/img/postmaga-logo.png"
-width: 45%;
+cover-img: "/img/ci-postmaga-collection-v2.png"
+width: 75%;
 order: 2
 ---

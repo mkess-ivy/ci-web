@@ -184,35 +184,6 @@ input {
     }
 }
 
-.copyright {
-    width:100%;
-
-    @include laptop {
-        width: 35%;
-    }
-    @include desktop {
-        width: 35%;
-        font-family: $body-font;
-        font-size: 12px;
-    }
-}
-.footer-link {
-    width: 100%;
-
-    @include laptop {
-        width: 25%;
-        text-align:right;
-    }
-
-    a {
-        color: $yellow;
-        text-decoration:none;
-
-        &:hover {
-            color: $white;
-        }
-    }
-}
 
 // Thank You Page
 .thankyou-wrapper {
@@ -272,6 +243,7 @@ input {
 
     @include  tablet {
         width: 65%;
+        font-size: 42px;
     }
     @include desktop {
         font-size: 54px;
@@ -326,6 +298,10 @@ input {
             margin-left: 55px;
             width: 80%;
         }
+
+        @include widescreen {
+            width: 75%;
+        }
     }
 }
 
@@ -337,8 +313,8 @@ input {
 
     .portfolio_item {
         border-bottom: 30px solid $darkgray;
-        margin-top: 75px;
-        padding-bottom: 75px;
+        // margin-top: 75px;
+        // padding-bottom: 75px;
         position: relative;
 
         &:last-child {
@@ -353,10 +329,10 @@ input {
         
     }
     .portfolio_meta {
-        padding: 0 35px 75px;
+        padding: 50px 35px 75px;
 
         @include tablet {
-            width:65%;
+            width:100%;
         }
 
         @include desktop {
@@ -368,6 +344,17 @@ input {
             padding-left: 100px;
             width: 40%;
         }
+        @include tv {
+            padding-left: 150px;
+        }
+    }
+    .port-top {
+        @include tablet {
+            width: 50%;
+        }
+        @include desktop {
+            width: 100%;
+        }
     }
     .portfolio_subtitle {
         padding-bottom: 15px;
@@ -376,15 +363,21 @@ input {
         font-size: 32px;
         line-height: 1;
         padding-bottom: 30px;
+        width: 75%;
 
         @include tablet {
-            font-size: 36px;
+            font-size: 24px;
         }
         @include desktop {
             width: 90%;
+            font-size: 32px;
         }
         @include widescreen {
             width: 90%;
+            font-size: 36px;
+        }
+        @include tv {
+            font-size: 50px;
         }
     }
     .portfolio_desc {
@@ -392,17 +385,28 @@ input {
         font-size: 18px;
         padding-bottom:75px;
 
+        @include tablet {
+            font-size: 14px;
+            padding-bottom: 0;
+        }
         @include desktop {
             // padding-bottom: 275px;
+            font-size: 18px;
         }
         @include widescreen {
             // font-size: 20px;
         }
     }
     .portfolio_bottom {
-        position: absolute;
-        bottom:50px;
-        width:35%;
+        @include tablet {
+            width:40%;
+        }
+        @include desktop {
+            position: absolute;
+            bottom:50px;
+            width:35%;
+        }
+        
     }
     
     .portfolio_cta {
@@ -419,13 +423,19 @@ input {
 
         @include tablet {
             // border: 25px solid;
-            height: 76vh;
+            // height: 76vh;
         }
 
         @include desktop {
             width: 50%;
+            height: 76vh;
+
             padding:0;
             background-color: $blue;
+        }
+
+        @include tv {
+            height: 90vh;
         }
         // @include widescreen {
         //     width: 45%;
@@ -435,6 +445,16 @@ input {
     .portfolio_img_inner {
         // width: 75%;
         text-align:center;
+        padding: 35px;
+
+        img {
+            @include tablet {
+                width: 45% !important;
+            }
+            @include desktop {
+                width: 75% !important;
+            }
+        }
     }
 }
 
@@ -514,22 +534,128 @@ input {
     text-align: center;
     color: $liteblue;
     text-align: center;
-    padding:100px;
+    padding: 75px 25px;
+
+    @include desktop {
+        padding:100px;
+    }
+    
 
     .mission_subtitle {
         padding-bottom: 45px;
     }
     .mission_statement {
-        font-size:40px;
-        line-height: 42px;
+        font-size:20px;
+        line-height: 1.1;
         padding-bottom: 45px;
+
+        @include tablet {
+            width: 75%;
+            margin: auto;
+        }
+
+        @include desktop {
+            font-size:40px;
+            // line-height: 42px;
+            width:100%;
+        }
+
+        @include tv {
+            width: 75%;
+        }
     }
 }
 .mission_cta {
     @include cta($liteblue, $black);
+    
 }
 
+// Stream
 
+.stream {
+    @include bg;
+    margin-bottom: 50vh;
+
+    @include tablet {
+        // margin-bottom: 45vh;
+        margin-bottom: 20vh;
+    }
+
+    @include widescreen {
+        margin-bottom: 25vh;
+    }
+    @include tv {
+        margin-bottom: 20vh;
+    }
+
+    .stream_item {
+        padding: 0 25px 75px;
+        
+
+        @include tablet {
+            width:50%;
+        }
+
+        @include desktop {
+            
+            padding: 50px 75px;
+            color: $liteblue;
+        }
+
+        &.text {
+            @include tv {
+                padding-left: 150px;
+            }
+        }
+
+        .stream_img {
+            
+            @include tablet {
+                padding: 50px 15px;
+            }
+            @include desktop {
+                padding: 50px 0;
+            }
+            @include widescreen {
+                padding: 50px;
+            }
+            @include tv {
+                width: 90%;
+            }
+        
+        }
+        .stream_subtitle {
+            padding: 75px 0 50px;
+            font-size: 18px;
+
+            @include desktop {
+                font-size: 24px;
+            }
+        }
+        .stream_title {
+            font-size: 32px;
+            line-height: 1;
+            padding-bottom:50px;
+
+            @include tablet {
+                // width: 45%;
+                max-width: 325px;
+            }
+
+            @include desktop {
+                font-size: 44px;
+            }
+            @include widescreen {
+                font-size: 48px;
+                max-width: 425px;
+            }
+        }
+        .stream_cta {
+            @include cta($liteblue, $black);
+          
+        }
+    }
+}
 
 // PreLoader
 // PreLoader

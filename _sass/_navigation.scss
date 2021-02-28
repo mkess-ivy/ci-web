@@ -1,5 +1,36 @@
+// Desktop
+.nav-desktop {
+  display: none;
+  @include desktop {
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+  }
+
+  ul {
+    li {
+      padding-left:20px;
+      display: inline-block;
+
+      a {
+        color: $liteblue;
+        text-decoration: none;
+        
+
+        &:hover {
+          transition: .3s;
+          color: $yellow;
+          padding-bottom: 2px;
+          border-bottom: 1px solid;
+        }
+      }
+    }
+  }
+}
 
 
+// Hamburger
 .hamburger {
     @include laptop {
       display: none !important;
@@ -128,6 +159,7 @@ footer {
 
     .footer_menu {
       width:100%;
+      
 
       @include tablet {
         width: 55%;
@@ -143,6 +175,14 @@ footer {
 
       .footer_menu_list {
         padding-bottom: 25px;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+
+        @include tablet {
+          width:50%;
+          text-align: left;
+        }
         li {
           padding-bottom: 4px;
           font-size: 14px;
@@ -162,3 +202,38 @@ footer {
   
   
   
+.copyright {
+  width:100%;
+  font-size: 12px;
+  text-align:center;
+
+  @include tablet {
+    text-align: left;
+  }
+
+  @include laptop {
+      width: 35%;
+  }
+  @include desktop {
+      width: 35%;
+      font-family: $body-font;
+      font-size: 12px;
+  }
+}
+.footer-link {
+  width: 100%;
+
+  @include laptop {
+      width: 25%;
+      text-align:right;
+  }
+
+  a {
+      color: $yellow;
+      text-decoration:none;
+
+      &:hover {
+          color: $white;
+      }
+  }
+}

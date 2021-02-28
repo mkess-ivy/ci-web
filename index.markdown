@@ -11,6 +11,8 @@ bg-img: /img/ci-bg.jpg
 
 {% include mission.html %}
 
+{% include stream.html %}
+
 {% comment %}
 {% include standout.html %}
 {% endcomment %}

@@ -1,0 +1,11 @@
+<section class="nav-desktop">
+    
+    <ul>
+        <div class="frow">
+            {% for item in site.data.menu %}
+            <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+            {% endfor %}
+        </div>
+        
+    </ul>
+</section>

@@ -1,0 +1,88 @@
+I"<section class="portfolio">
+    
+    
+    <div class="portfolio_item">
+        <div class="frow justify-between">
+            <div class="portfolio_meta">
+                <div class="frow justify-between">
+                    <div class="port-top">
+                        <div class="portfolio_subtitle">Collection 002</div>
+                        <div class="portfolio_title">From Nothing to Something</div>
+                        <div class="portfolio_desc">POSTMAGA is an archive capsule that stamps a very defining year of America in 2020.  This collection has been created with the goal of encouraging healthy discourse around our truths, and how we can move forward, better together.</div>
+                    </div>
+                    <div class="portfolio_bottom">
+                        <div class="portfolio_title">Releasing February 2021</div>
+                        <a href="#">
+                            <div class="portfolio_cta">
+                                Get Notified
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio_img" style="background-image:url('/img/ci-cover-bw-plant.jpg');">
+                <div class="frow centered">
+                    <div class="portfolio_img_inner"><img src="/img/ci-img-inner-001.gif" style="width: 75%;" /></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="portfolio_item">
+        <div class="frow justify-between">
+            <div class="portfolio_meta">
+                <div class="frow justify-between">
+                    <div class="port-top">
+                        <div class="portfolio_subtitle">Capsule 001</div>
+                        <div class="portfolio_title">POSTMAGA</div>
+                        <div class="portfolio_desc">POSTMAGA is an archive capsule that stamps a very defining year of America in 2020.  This collection has been created with the goal of encouraging healthy discourse around our truths, and how we can move forward, better together.</div>
+                    </div>
+                    <div class="portfolio_bottom">
+                        <div class="portfolio_title">Now <br />Available</div>
+                        <a href="#">
+                            <div class="portfolio_cta">
+                                Explore PostMaga
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio_img" style="background-image:url('/img/ci-img-inner-004.jpg');">
+                <div class="frow centered">
+                    <div class="portfolio_img_inner"><img src="/img/ci-postmaga-collection-v2.png" style="width: 75%;" /></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</section>
+
+<section class="mission" style="background-image:url('/img/mission_bg.jpg');">
+    <div class="mission_subtitle">A News Platform</div>
+    <div class="mission_statement">Sharing the blueprints, partnerships + industry news for black culture + business</div>
+    
+    <div class="mission_cta_wrapper">
+        <a href="/subscribe/">
+            <div class="mission_cta">
+                Follow our Journey
+            </div>
+        </a>
+    </div>
+
+</section>
+
+<section class="stream" style="background-image:url('/img/ci-bg-003.png');">
+    <div class="frow justify-between">
+        <div class="stream_item">
+            <div class="stream_subtitle">Stream</div>
+            <div class="stream_title">Culture Intersects x Sounds</div>
+            <a href="/"><div class="stream_cta">Listen on Tidal</div></a>
+        </div>
+        <div class="stream_item">
+            <div class="stream_img"><img src="/img/ci-stream.png" /></div>
+        </div>
+    </div>
+</section>
+
+:ET

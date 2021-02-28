@@ -34,3 +34,9 @@ $on-tv                  : 1439px;
     @content;
   }
 }
+
+@mixin tv {
+  @media screen and (min-width: #{$on-tv}) {
+    @content;
+  }
+}
