@@ -46,6 +46,8 @@ input { color: #e1ee8e; }
 
 @media screen and (min-width: 992px) { .grid.header { padding: 0 50px 0; } }
 
+.grid-width { padding-top: 75px; }
+
 @media screen and (min-width: 992px) { .grid-width { height: calc(100vh - 160px); } }
 
 .logo { width: 60px; }
@@ -136,7 +138,9 @@ input { color: #e1ee8e; }
 
 @media screen and (min-width: 767px) { .banner_item { width: 48%; } }
 
-.content_title a { color: #CAFBE7; text-decoration: none; font-size: 33px; line-height: 1; margin-top: -33px; display: block; margin-left: 16px; }
+.content_title a { color: #CAFBE7; text-decoration: none; font-size: 33px; line-height: 1.1; margin-top: -33px; display: block; margin-left: 16px; }
+
+.content_title a:hover { color: #e1ee8e; transition: .3s; text-decoration: underline; }
 
 @media screen and (min-width: 767px) { .content_title a { font-size: 26px; margin-top: -20px; } }
 
@@ -254,7 +258,7 @@ input { color: #e1ee8e; }
 
 @media screen and (min-width: 1024px) { .mission .mission_statement { font-size: 40px; width: 100%; } }
 
-@media screen and (min-width: 1439px) { .mission .mission_statement { width: 75%; } }
+@media screen and (min-width: 1439px) { .mission .mission_statement { width: 70%; } }
 
 .mission_cta { display: inline-block; padding: 7px 25px; color: #CAFBE7; border: 3px solid; text-decoration: none; font-size: 12px; }
 

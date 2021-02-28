@@ -1,13 +1,15 @@
-<section class="mission" style="background-image:url('/img/mission_bg.jpg');">
-    <div class="mission_subtitle">A News Platform</div>
-    <div class="mission_statement">Sharing the blueprints, partnerships + industry news for black culture + business</div>
+{% for item in page.mission %}
+<section class="mission" style="background-image:url('{{ item.bg}}');">
+    <div class="mission_subtitle">{{ item.subtitle }}</div>
+    <div class="mission_statement">{{ item.title }}</div>
     
     <div class="mission_cta_wrapper">
-        <a href="/subscribe/">
+        <a href="{{ site.instagram }}" target="_blank">
             <div class="mission_cta">
-                Follow our Journey
+                {{ item.cta_title}}
             </div>
         </a>
     </div>
 
 </section>
+{% endfor %}

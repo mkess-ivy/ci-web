@@ -33,6 +33,7 @@ plugins:
 bg-img: /img/ci-bg.jpg
 header-logo: /img/ci-logo-v2.gif
 logo: /img/ci-logo-v2.png
+instagram: http://www.instagram.com/cultureintersects
 
 collections:
   portfolio:

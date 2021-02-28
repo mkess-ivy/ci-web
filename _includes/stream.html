@@ -1,12 +1,14 @@
-<section class="stream" style="background-image:url('/img/ci-bg-003.png');">
+{% for item in page.stream %}
+<section class="stream" style="background-image:url('{{ item.bg }}');">
     <div class="frow justify-between">
         <div class="stream_item text">
-            <div class="stream_subtitle">Stream</div>
-            <div class="stream_title">Culture Intersects x Sounds</div>
-            <a href="/"><div class="stream_cta">Listen on Tidal</div></a>
+            <div class="stream_subtitle">{{ item.subtitle }}</div>
+            <div class="stream_title">{{ item.title }}</div>
+            <a href="{{ item.playlist }}" target="_blank" alt="Culture Intersects Playlist"><div class="stream_cta">{{ item.playlist_title_cta }}</div></a>
         </div>
         <div class="stream_item">
-            <div class="stream_img"><img src="/img/ci-stream.png"/></div>
+            <a href="{{ item.playlist }}" target="_blank" alt="Culture Intersects Playlist"><div class="stream_img"><img src="{{item.playlist_img}}"/></div></a>
         </div>
     </div>
 </section>
+{% endfor %}

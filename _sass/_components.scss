@@ -57,6 +57,7 @@ input {
     }
 }
 .grid-width {
+    padding-top: 75px;
     @include laptop {
         height:calc(100vh - 160px);
     }
@@ -283,10 +284,16 @@ input {
         color: $liteblue;
         text-decoration: none;
         font-size: 33px;
-        line-height: 1;
+        line-height: 1.1;
         margin-top: -33px;
         display: block;
         margin-left: 16px;
+
+        &:hover {
+            color: $yellow;
+            transition: .3s;
+            text-decoration: underline;
+        }
 
         @include tablet {
             font-size: 26px;
@@ -561,7 +568,7 @@ input {
         }
 
         @include tv {
-            width: 75%;
+            width: 70%;
         }
     }
 }
